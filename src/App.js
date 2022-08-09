@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import Header from "./components/Header";
+import Progressbar from "./components/Progressbar";
+import MainContent from "./components/Main-Content/MainContent";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container bg-white p-5">
+      <div className="row">
+        <div className="col-12 col-md-4 offset-md-4">
+          <Header />
+          <Progressbar />
+          <main>
+            <MainContent />
+          </main>
+        </div>
+      </div>
     </div>
   );
-}
+};
 
 export default App;

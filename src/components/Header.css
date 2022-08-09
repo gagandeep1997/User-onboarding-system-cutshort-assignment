@@ -1,0 +1,24 @@
+.header{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo .header-logo{
+    height: 24px;
+    width: 24px;
+    display: inline-block;
+}
+
+.logo .heading{
+    display: inline-block;
+    font-size: 1.7rem;
+    font-weight: 700;
+    letter-spacing: -1.2px;
+    margin: 0 0 0 10px;
+}
