@@ -9,6 +9,7 @@ const CustomInput = ({
   InputTouched,
   changeInputTouched,
   IsBasicUrl,
+  setName
 }) => {
   const textRef = useRef();
 
@@ -17,6 +18,9 @@ const CustomInput = ({
       changeValidInputHandler(false);
     } else {
       changeValidInputHandler(true);
+      if(labelName==="Display Name"){
+        setName(textRef.current.value);
+      }
     }
     changeInputTouched(true);
   };
@@ -25,9 +29,7 @@ const CustomInput = ({
     changeInputTouched(true);
   };
 
-  const IsTextValidClass = !InputIsValid && InputTouched
-    ? "Form Invalid"
-    : "";
+  const IsTextValidClass = !InputIsValid && InputTouched ? "Form Invalid" : "";
 
   return (
     <div className={`${IsTextValidClass} mb-2`}>
@@ -44,6 +46,10 @@ const CustomInput = ({
           onBlur={blurHandler}
         />
       )}
+      {!InputIsValid && InputTouched && (
+        <p className="error-text">Field must not be empty</p>
+      )}
+      {/* This Field is optional so we dont need to add validation for that */}
       {IsBasicUrl && (
         <div className="input-group">
           <span className="input-group-text" id="basic-addon3">
@@ -55,13 +61,9 @@ const CustomInput = ({
             id="basic-url"
             aria-describedby="basic-addon3"
             placeholder="Example"
-            onChange={textChangeHandler}
-            ref={textRef}
-            onBlur={blurHandler}
           />
         </div>
       )}
-      {!InputIsValid && InputTouched && <p className="error-text">Field must not be empty</p>}
     </div>
   );
 };

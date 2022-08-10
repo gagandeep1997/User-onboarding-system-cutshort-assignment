@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import CustomInput from "../Input/CustomInput";
-import ImageOptions from "../Main-Content/ImageOptions";
+import ImageOptions from "../ImageOptions";
 
-const Form = ({ step, stepHandler }) => {
+const Form = ({ step, stepHandler, setName }) => {
   const [Input1IsValid, setInput1IsValid] = useState(false);
   const [Input2IsValid, setInput2IsValid] = useState(false);
   const [Input1Touched, setInput1Touched] = useState(false);
@@ -10,13 +10,16 @@ const Form = ({ step, stepHandler }) => {
 
   const submitHandler = (e) => {
     e.preventDefault();
-    console.log(Input1IsValid, Input2IsValid);
-    if (!Input1IsValid || !Input2IsValid) {
-      setInput1Touched(true);
-      setInput2Touched(true);
-      return;
+    if (step === 1 || step === 2) {
+      if (!Input1IsValid || !Input2IsValid) {
+        setInput1Touched(true);
+        setInput2Touched(true);
+        return;
+      }
+      setInput1IsValid(false);
+      setInput1Touched(false);
+      document.getElementsByTagName("input")[0].value = "";
     }
-    document.getElementsByTagName('input')[0].value="";
     stepHandler((prev) => {
       return prev + 1;
     });
@@ -44,6 +47,7 @@ const Form = ({ step, stepHandler }) => {
               InputTouched={Input2Touched}
               changeInputTouched={setInput2Touched}
               IsBasicUrl={false}
+              setName={setName}
             />
           ) : (
             <CustomInput

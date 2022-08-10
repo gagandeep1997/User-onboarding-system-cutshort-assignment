@@ -18,7 +18,7 @@ const MainContentHeading = ({ step }) => {
   return (
     <div className="form-headings text-center mt-5">
       <h3>{heading}</h3>
-      <p>{subHeading}</p>
+      <p className="mb-5">{subHeading}</p>
     </div>
   );
 };
