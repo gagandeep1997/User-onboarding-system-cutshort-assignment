@@ -1,0 +1,28 @@
+.Summary--heading h3{
+    font-weight: 600;
+}
+
+.Summary--heading p {
+    color: #767e90;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.Summary--heading .btn{
+    width: 333px;
+}
+
+.dot {
+    height: 60px;
+    width: 60px;
+    background-color: #664de5;
+    border-radius: 50%;
+    display: inline-flex;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa.fa-check {
+    color: white;
+}

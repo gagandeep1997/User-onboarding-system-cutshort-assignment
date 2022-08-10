@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import CustomInput from "../Input/CustomInput";
-import ImageOptions from "../ImageOptions";
+import ImageOptions from "../Input/ImageOptions";
 
 const Form = ({ step, stepHandler, setName }) => {
   const [Input1IsValid, setInput1IsValid] = useState(false);
