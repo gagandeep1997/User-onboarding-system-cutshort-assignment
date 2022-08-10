@@ -1,0 +1,10 @@
+.Congratulation--heading h3{
+    font-weight: 700;
+}
+
+.Congratulation--heading p {
+    color: #767e90;
+    font-weight: 600;
+    font-size: 13px;
+    white-space: nowrap;
+}

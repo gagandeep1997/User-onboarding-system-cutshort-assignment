@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import MainContentHeading from "./MainContentHeading";
-import Form from "./Form";
+import Form from "../Form/Form";
 import Congratulation from "./Congratulation";
 
 const MainContent = () => {

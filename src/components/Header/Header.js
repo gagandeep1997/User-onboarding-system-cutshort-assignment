@@ -1,6 +1,6 @@
 import React from "react";
 import "./Header.css";
-import img from "../Images/Screenshot 2022-08-09 at 11.41.09 AM.png";
+import img from "../../Images/logo.png";
 
 const Header = () => {
   return (

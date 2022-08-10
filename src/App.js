@@ -1,7 +1,6 @@
 import React from "react";
-import "./App.css";
-import Header from "./components/Header";
-import Progressbar from "./components/Progressbar";
+import Header from "./components/Header/Header";
+import Progressbar from "./components/Progressbar/Progressbar";
 import MainContent from "./components/Main-Content/MainContent";
 
 const App = () => {

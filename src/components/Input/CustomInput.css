@@ -1,0 +1,42 @@
+label {
+    display: inline-block;
+    margin: 5px 0;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+label span {
+    color: #ced5e2;
+}
+  
+input[type='text'] {
+    border: 1px solid #ecf0f6;
+    border-radius: 4px;
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+}
+
+.Form.Invalid input {
+    background-color: #fddddd;
+    border-color: #b40e0e;
+}
+
+.error-text {
+    color: #b40e0e;
+}
+  
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #bbb;
+    opacity: 1; /* Firefox */
+}
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: red;
+}
+  
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: red;
+}
+
