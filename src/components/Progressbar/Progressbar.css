@@ -1,13 +1,5 @@
-.steps {
-    font-size: 25px;
-    color: black;
-    margin-bottom: 10px;
-    font-weight: normal;
-    text-align: right
-}
-
 #progressbar {
-    margin-bottom: 30px;
+    margin-bottom: 70px;
     overflow: hidden;
     color: lightgrey;
     counter-reset: step;
@@ -15,7 +7,7 @@
     display: flex;
     justify-content: center;
     margin-top: 50px;
-    padding-left: 0px;
+    padding-left: 5px;
 }
 
 #progressbar .active {
@@ -53,6 +45,7 @@
     align-items: center;
     position: relative;
     z-index: 100;
+    background-color: white;
 }
 
 #progressbar li:after {
