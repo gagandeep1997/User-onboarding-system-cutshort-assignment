@@ -9,3 +9,5 @@ It contains simple validation for validating the data entered by user.
 4. Bootstrap
 
 Click here to see the site on netlify : https://magical-marshmallow-48ace6.netlify.app/
+
+![first-page-of-website](file:///Users/gagdeep/Desktop/Screenshot%202022-08-11%20at%204.02.59%20PM.png)
