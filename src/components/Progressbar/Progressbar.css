@@ -73,6 +73,12 @@
     color: #ffffff;
 }
 
+@media (max-width: 910px) {
+    #progressbar li {
+        width: 15%;
+    }
+}
+
 @media (max-width: 575px) {
     #progressbar {
         margin-bottom: 40px;
