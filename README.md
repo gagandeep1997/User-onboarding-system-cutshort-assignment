@@ -1,6 +1,6 @@
 # Onboarding-System
 This is a simple onboarding website where you can create your own workspace on Eden.
-It contains simple validation for validating the input.
+It contains simple validation for validating the data entered by user.
 
 <b>Tech Stack</b>
 1. React
