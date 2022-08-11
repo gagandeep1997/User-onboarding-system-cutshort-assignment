@@ -1,7 +1,7 @@
 import React from "react";
-import "./ImageOptions.css";
+import "./CustomRadioInput.css";
 
-const ImageOptions = () => {
+const CustomRadioInput = () => {
   return (
     <div className="grid">
       <label className="card">
@@ -28,4 +28,4 @@ const ImageOptions = () => {
   );
 };
 
-export default ImageOptions;
+export default CustomRadioInput;

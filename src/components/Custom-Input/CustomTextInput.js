@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
-import "./CustomInput.css";
+import "./CustomTextInput.css";
 
-const CustomInput = ({
+const CustomTextInput = ({
   labelName,
   placeHolderName,
   InputIsValid,
@@ -68,4 +68,4 @@ const CustomInput = ({
   );
 };
 
-export default CustomInput;
+export default CustomTextInput;

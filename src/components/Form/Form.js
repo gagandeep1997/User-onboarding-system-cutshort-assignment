@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import CustomInput from "../Input/CustomInput";
-import ImageOptions from "../Input/ImageOptions";
+import CustomTextInput from "../Custom-Input/CustomTextInput";
+import CustomRadioInput from "../Custom-Input/CustomRadioInput";
 
 const Form = ({ step, stepHandler, setName }) => {
   const [Input1IsValid, setInput1IsValid] = useState(false);
@@ -29,7 +29,7 @@ const Form = ({ step, stepHandler, setName }) => {
     <form onSubmit={submitHandler}>
       {(step === 1 || step === 2) && (
         <>
-          <CustomInput
+          <CustomTextInput
             labelName={`${step === 1 ? "Full Name" : "Workspace Name"}`}
             placeHolderName={`${step === 1 ? "Steve Jobs" : "Eden"}`}
             InputIsValid={Input1IsValid}
@@ -39,7 +39,7 @@ const Form = ({ step, stepHandler, setName }) => {
             IsBasicUrl={false}
           />
           {step === 1 ? (
-            <CustomInput
+            <CustomTextInput
               labelName="Display Name"
               placeHolderName="Steve"
               InputIsValid={Input2IsValid}
@@ -50,7 +50,7 @@ const Form = ({ step, stepHandler, setName }) => {
               setName={setName}
             />
           ) : (
-            <CustomInput
+            <CustomTextInput
               labelName="Workspace URL"
               placeHolderName=""
               InputIsValid={Input2IsValid}
@@ -62,7 +62,7 @@ const Form = ({ step, stepHandler, setName }) => {
           )}
         </>
       )}
-      {step === 3 && <ImageOptions />}
+      {step === 3 && <CustomRadioInput />}
       <div className="d-grid">
         <button className="btn btn-primary mt-3">Create Workspace</button>
       </div>
