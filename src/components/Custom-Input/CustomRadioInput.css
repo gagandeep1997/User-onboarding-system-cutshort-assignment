@@ -93,7 +93,7 @@ label {
 
 @media (max-width: 575px) {
     .grid {
-        width: 19.5em;
+        width: 18.5em;
         grid-gap: 1em;
     }
 
