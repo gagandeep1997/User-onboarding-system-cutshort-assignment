@@ -8,7 +8,7 @@
 body {
   background-color: #e9edf4;
   margin: 0;
-  padding: 8rem 0;
+  padding: 6rem 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
@@ -34,4 +34,9 @@ code {
   border-color: #4d34cc;
 }
 
+@media screen and (max-width: 575px) {
+  body {
+    padding: 3rem 0;
+  }
+}
 

@@ -20,7 +20,7 @@ const ImageOptions = () => {
           <i className="fa-solid fa-users mb-2"></i>
           <p className="first-heading">With my team</p>
           <p className="second-heading">
-            Wikis, docs, tasks & projects, all in one place
+            Wikis, docs, tasks & projects, all in one place.
           </p>
         </span>
       </label>

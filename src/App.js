@@ -4,7 +4,7 @@ import MainContent from "./components/Main-Content/MainContent";
 
 const App = () => {
   return (
-    <div className="container p-5">
+    <div className="container p-3 p-md-5">
       <div className="row">
         <div className="col-12 col-md-12">
           <Header />

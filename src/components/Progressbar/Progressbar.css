@@ -72,3 +72,13 @@
     background: #664de5;
     color: #ffffff;
 }
+
+@media (max-width: 575px) {
+    #progressbar {
+        margin-bottom: 40px;
+    }
+    
+    #progressbar li {
+        width: 30%;
+    }
+}

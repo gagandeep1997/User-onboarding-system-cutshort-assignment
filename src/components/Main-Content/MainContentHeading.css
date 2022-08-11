@@ -6,3 +6,17 @@
     color: #767e90;
     font-weight: 600;
 }
+
+@media (max-width: 575px) {
+    .container{
+        max-width: 92%;
+    }
+
+    .form-headings h3{
+        font-size: 22px;
+    }
+
+    .form-headings p {
+        font-size: 14px;
+    }
+}

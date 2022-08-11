@@ -26,3 +26,9 @@
 .fa.fa-check {
     color: white;
 }
+
+@media (max-width: 575px) {
+    .Summary--heading .btn{
+        width: 200px;
+    }
+}

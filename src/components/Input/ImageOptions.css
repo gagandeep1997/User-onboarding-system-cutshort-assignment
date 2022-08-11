@@ -85,10 +85,31 @@ label {
 
 .radio:checked ~ .plan-details .fa-user{
     color: #664de5;
-    font-size: 19px;
 }
 
 .radio:checked ~ .plan-details .fa-users{
-    font-size: 18px;
     color: #664de5;
+}
+
+@media (max-width: 575px) {
+    .grid {
+        width: 16.5em;
+        grid-gap: 1em;
+    }
+
+    .first-heading {
+        font-size: 13px;
+    }
+
+    .second-heading {
+        font-size: 11px;
+    }
+
+    .fa-user{
+        font-size: 16px;
+    }
+    
+    .fa-users{
+        font-size: 15px;
+    }
 }

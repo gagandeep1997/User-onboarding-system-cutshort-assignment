@@ -10,12 +10,12 @@ const MainContent = () => {
 
   return (
     <>
-    <Progressbar step={step} />
+      <Progressbar step={step} />
       {(step === 1 || step === 2 || step === 3) && (
         <div>
           <MainContentHeading step={step} />
           <div className="row gx-5 justify-content-center">
-            <div className="col-12 col-md-4">
+            <div className="col-12 col-lg-4 col-md-7 col-sm-12">
               <Form step={step} stepHandler={setstep} setName={setName} />
             </div>
           </div>
