@@ -1,0 +1,94 @@
+.grid {
+    display: flex;
+    grid-gap: 2em;
+    margin: 0 auto;
+    max-width: 22em;
+    padding: 0;
+}
+  
+.card {
+    border-radius: 0.5em;
+    position: relative;
+}
+
+.card:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+}
+  
+.radio {
+    display: none;
+}
+  
+.plan-details {
+    border: 1px solid white;
+    border-radius: 0.5em;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px 10px 20px;
+    transition: border-color 0.2s ease-out;
+}
+  
+.card:hover .plan-details {
+    border-color: blue;
+}
+
+.radio:checked ~ .plan-details {
+    border-color: #664de5;
+}
+
+.radio:focus ~ .plan-details {
+    box-shadow: 0 0 0 2px gray;
+}
+
+.radio:disabled ~ .plan-details {
+    color: gray;
+    cursor: default;
+}
+
+.card:hover .radio:disabled ~ .plan-details {
+    border-color: gray;
+    box-shadow: none;
+}
+
+.card:hover .radio:disabled {
+    border-color: gray;
+}
+
+.first-heading {
+    font-size: 16px;
+    color: black;
+    font-weight: 600;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.second-heading {
+    font-size: 14px;
+    color: #767e90;
+    font-weight: 500;
+}
+
+label { 
+    margin: 0;
+}
+
+.fa-user{
+    color: black;
+    font-size: 19px;
+}
+
+.fa-users{
+    font-size: 18px;
+    color: black;
+}
+
+.radio:checked ~ .plan-details .fa-user{
+    color: #664de5;
+    font-size: 19px;
+}
+
+.radio:checked ~ .plan-details .fa-users{
+    font-size: 18px;
+    color: #664de5;
+}

@@ -4,7 +4,7 @@ import "./Summary.css";
 const Summary = ({name}) => {
   return (
     <div className="Summary--heading text-center">
-      <span className="dot"><i class="fa fa-check" aria-hidden="true"></i></span>
+      <span className="dot"><i className="fa fa-check" aria-hidden="true"></i></span>
       <h3>Congratulations, {name}</h3>
       <p>You have completed onboarding, you can start using the Eden!</p>
       <div className="row justify-content-center">
